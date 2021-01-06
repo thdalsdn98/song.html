@@ -3,21 +3,42 @@
 
 <head>
 <meta charset="utf-8">
-<title>고양이</title>
 
+<title>고양이</title>
+<style>
+  a {
+    color:black;
+    text-decoration:none;
+  }
+  #active {
+    color:blue;
+  }
+  .saw {
+    margin:10px;
+    font-size:23px;
+    color:gray;
+  }
+  h1 {
+    font-size:60px;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+</style>
 </head>
 
 <body>
-<h1><a href="index.html">고양이</a></h1>
+<h1><a href="index.html" style="color:red">고양이</a></h1>
 <h2>[domestic cat]</h2>
 <br>
 <br>
 
 <ol>
-  <li><a href="2.html"> 노르웨이숲고양이</a></li>
-  <li><a href="3.html"> 데본렉스</a></li>
-  <li><a href="4.html"> 메인쿤</a></li>
-  <li><a href="아이유.html"><strong><font color="red">아이유</strong></font></a></li>
+  <li><a href="2.html" class="saw"> 노르웨이숲고양이</a></li>
+  <li><a href="3.html" class="saw"> 데본렉스</a></li>
+  <li><a href="4.html"class="saw"> 메인쿤</a></li>
+  <li><a href="아이유.html" class="saw" id="active"><strong>아이유</strong></a></li>
 </ol>
 
 <img src="cacat.JPG" width="300">
@@ -26,7 +47,6 @@
 <p>매력은 민우와 비슷하며 귀여움또한 상응한다.
 </p>
 <u>다음 내용은 <strong><font color="Blue">아이유</strong></font> 목차에서 이어집니다.</u>
-
 
 <div id="disqus_thread"></div>
 <script>
@@ -47,7 +67,6 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
 </body>
 </html>
 
