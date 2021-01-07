@@ -1,0 +1,37 @@
+a{
+  text-decoration: none;
+  color:black;
+}
+h1,h2 {
+  text-align: center;
+  margin:0px;
+
+}
+h2 {
+  padding-bottom:10px;
+  border-bottom:1px solid gray;
+}
+body {
+  margin:0px;
+}
+#gold ol {
+  border-right:1px solid gray;
+  width:220px;
+  margin:0px;
+  padding:18px;
+  padding-left:40px;
+  font-size:22px;
+}
+#grid {
+  display:grid;
+  grid-template-columns: 290px 1fr;
+}
+@media(max-width:800px){
+  #grid{  display:block;}
+    #gold ol {
+        border-right:none;
+  }
+  h2 {
+    border-bottom:none;
+}
+}
