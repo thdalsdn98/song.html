@@ -4,8 +4,18 @@
     <meta charset="utf-8">
     <title>송새로이</title>
     <style>
-    input {
-      margin-bottom:370px;
+    input{
+      background-color: #3b5998;
+      color:white;
+      border: none;
+      padding:15px 50px;
+      font-size: 20px;
+
+    }
+    #buton {
+          margin-bottom:370px;
+            padding:10px 15px;
+            font-size: 13px;
     }
       body {
         background-image:url('민우2.PNG');
@@ -20,12 +30,17 @@
         font-size:60px;
         text-align: center;
         margin-bottom: 0px;
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
       }
       h2 {
         text-align: center;
         color:black;
         border-bottom:1px solid gray;
         padding:10px;
+        margin-top:0;
+      }
+      h1,h2 {
+        background-color:LightSteelBlue;
       }
       h3 {
         font-size:25px;
@@ -56,9 +71,11 @@
   .sero {
     text-align: center;
   }
+
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+
 var Links1 = {
     setColor:function(color){
       var plist = document.querySelectorAll('p');
@@ -81,23 +98,26 @@ var Links = {
     }
   function nightDayHandler(self){
     var target = document.querySelector('body');
-    if(self.value === '어두운 모드'){
+    if(self.value === '어두운모드'){
       Body.setBackgroundColor('#3c3c3c')
       Body.setColor('white');
       self.value = '밝은 모드';
 
       Links.setColor('powderblue');
       Links1.setColor('black');
+
+
     }  else {
       Body.setBackgroundColor('white')
       Body.setColor('#3c3c3c');
-      self.value = '어두운 모드';
+      self.value = '어두운모드';
+
       }
     }
   </script>
   </head>
   <body>
-    <input type="button" value="어두운 모드" onclick="
+    <input id="buton" type="button" value="어두운모드" onclick="
     nightDayHandler(this);
     ">
     <h1>송새로이</h1>
@@ -134,6 +154,7 @@ var Links = {
   </div>
   <br>
   <br>
+  <input type="button" value="퍼즐게임 하러가기" onClick="location.href='게임.html'">><br>
   <div class="sero">
   <img src="송강준.PNG" width="900" height="600"></div>
   <div id="disqus_thread"></div>
