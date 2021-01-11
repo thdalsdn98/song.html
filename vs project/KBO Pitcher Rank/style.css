@@ -1,0 +1,44 @@
+body {
+    margin-left: 60px;
+}
+h2 {margin-top: 30px;
+    border-bottom: 4px solid #3c3c3c;
+    padding:40px;
+    padding-bottom: 10px;
+}
+#change {
+    display:grid;
+    grid-template-columns: 85px 1fr;
+    padding-top:30px;
+    margin-left: 5px;
+    padding-bottom: 2px;
+}
+#change a {
+    padding-left: 8px;
+
+}
+.red {
+    border:1px solid red;
+    border-bottom: 1px solid #dee2e6;
+    border-top: none;
+}
+.red1 {
+    border:1px solid red;
+    border-bottom: 1px solid #dee2e6;
+}
+.red2 {
+    border:1px solid red;
+    border-bottom: 1px solid red;
+}
+.table-secondary {
+    color:MediumBlue;
+}
+#back {
+    background-color:#fafafa;
+}
+td {
+    text-align: center;
+}
+.right {
+    border-right: 1px solid #e2e3e5;
+}
